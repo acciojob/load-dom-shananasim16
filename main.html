@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>DOM Load Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <script>
+        // Function to write the message when the DOM is loaded
+        function onDOMLoad() {
+            var message = "DOM load success";
+            document.body.textContent = message;
+        }
 
+        // Add an event listener to run the function when the DOM is loaded
+        document.addEventListener("DOMContentLoaded", onDOMLoad);
+    </script>
 </body>
-
 </html>
